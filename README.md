@@ -97,6 +97,14 @@ Notes:
 - API is exposed on `http://localhost:4000`
 - Postgres is exposed only on `127.0.0.1:${POSTGRES_PORT}` by default
 
+## Railway
+Railway deployment is configured for the API via [railway.json](/c:/Users/USER/PGG/PGG/railway.json).
+
+Files:
+- [railway.json](/c:/Users/USER/PGG/PGG/railway.json) for Dockerfile-based Railway deployment and health checks
+- [\.env.railway.example](/c:/Users/USER/PGG/PGG/.env.railway.example) for API service variables
+- [docs/railway-deploy.md](/c:/Users/USER/PGG/PGG/docs/railway-deploy.md) for the full Railway + APK flow
+
 ## CI
 - GitHub Actions workflow: `.github/workflows/ci.yml`
 - Runs install, shared build, API build, and API tests on pushes/PRs.
