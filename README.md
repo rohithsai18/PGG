@@ -31,21 +31,27 @@ cp apps/api/.env.example apps/api/.env
 cp apps/mobile/.env.example apps/mobile/.env
 ```
 
-3. Set real values in `apps/api/.env` for Neon and Cloudinary.
+3. Start PostgreSQL for local development:
+```bash
+npm run dev:db
+```
+This starts a Docker Postgres container on `localhost:5436`, which matches the default `DATABASE_URL` in `apps/api/.env.example`.
 
-4. Run Prisma migration and seed:
+4. Set real values in `apps/api/.env` for Cloudinary. If you use Neon instead of Docker, replace `DATABASE_URL` in `apps/api/.env` with your Neon connection string.
+
+5. Run Prisma migration and seed:
 ```bash
 cd apps/api
 npx prisma migrate dev --name init
 npm run prisma:seed
 ```
 
-5. Start API:
+6. Start API:
 ```bash
 npm run dev --workspace @real-estate/api
 ```
 
-6. Start mobile:
+7. Start mobile:
 ```bash
 npm run dev --workspace @real-estate/mobile
 ```
@@ -55,6 +61,7 @@ From the project root:
 ```bash
 npm run install:all     # install all workspace dependencies
 npm run build:all       # build shared + api (+ mobile if build script exists)
+npm run dev:db          # start local Postgres on localhost:5436 via Docker
 npm run dev:api         # start API dev server
 npm run dev:mobile      # start Expo mobile dev server
 npm run apk             # trigger EAS Android APK build
@@ -77,12 +84,18 @@ npm run ios:build
 - If two users try to book the same unit concurrently, only one request succeeds; the other gets `409 UNIT_NOT_AVAILABLE`.
 - Cost sheet creation is in the same transaction as booking creation to avoid partial writes.
 
-## Docker (API)
-Build and run:
+## Docker Compose
+Containerized API + Postgres with persistent database storage:
 ```bash
-docker build -f apps/api/Dockerfile -t real-estate-api .
-docker run --rm -p 4000:4000 --env-file apps/api/.env real-estate-api
+cp .env.docker.example .env.docker
+docker compose --env-file .env.docker up -d --build
 ```
+
+Notes:
+- Postgres data persists in the named Docker volume `postgres-data`
+- API brochure assets are mounted from `apps/api/assets` as a read-only bind mount
+- API is exposed on `http://localhost:4000`
+- Postgres is exposed only on `127.0.0.1:${POSTGRES_PORT}` by default
 
 ## CI
 - GitHub Actions workflow: `.github/workflows/ci.yml`

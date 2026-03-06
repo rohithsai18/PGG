@@ -43,18 +43,18 @@ export default function LoginPage() {
   return (
     <View style={styles.container}>
       <TextInput style={styles.input} value={phone} onChangeText={setPhone} placeholder="Phone number" keyboardType="phone-pad" />
-      {!requestId &&
-      <Pressable style={styles.button} onPress={onRequestOtp} disabled={loading}>
-        <Text style={styles.buttonText}>Request OTP</Text>
-      </Pressable>
-      }
-
-      <TextInput style={styles.input} value={otp} onChangeText={setOtp} placeholder="OTP" keyboardType="number-pad" />
-      {requestId &&
-      <Pressable style={[styles.button, styles.verify]} onPress={onVerify} disabled={loading || !requestId}>
-        <Text style={styles.buttonText}>Verify & Login</Text>
-      </Pressable>
-  } 
+      {!requestId ? (
+        <Pressable style={styles.button} onPress={onRequestOtp} disabled={loading}>
+          <Text style={styles.buttonText}>Request OTP</Text>
+        </Pressable>
+      ) : (
+        <>
+          <TextInput style={styles.input} value={otp} onChangeText={setOtp} placeholder="OTP" keyboardType="number-pad" />
+          <Pressable style={[styles.button, styles.verify]} onPress={onVerify} disabled={loading || !requestId}>
+            <Text style={styles.buttonText}>Verify & Login</Text>
+          </Pressable>
+        </>
+      )}
     </View>
   );
 }

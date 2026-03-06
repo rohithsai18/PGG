@@ -14,12 +14,12 @@ const router = Router();
 registerHealthGetRoute(router);
 
 router.use('/auth', authRouter);
+router.use('/brochure', brochureRouter);
 router.use(requireAuth);
 router.use(usersRouter);
 router.use('/kyc', kycRouter);
 router.use('/documents', documentsRouter);
 router.use('/units', unitsRouter);
 router.use('/bookings', bookingsRouter);
-router.use('/brochure', brochureRouter);
 
 export const apiRouter = router;

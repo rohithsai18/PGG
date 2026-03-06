@@ -23,7 +23,7 @@ function RootNavigator() {
       }}
     >
       <Stack.Screen name="index" options={{ headerShown: false }} />
-      <Stack.Screen name="login" options={{ title: 'REAL ESTATE DEMO' }} />
+      <Stack.Screen name="login" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="unit/[id]" options={{ title: 'UNIT DETAILS' }} />
       <Stack.Screen name="booking-success" options={{ title: 'BOOKING SUCCESS' }} />

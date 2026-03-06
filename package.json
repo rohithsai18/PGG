@@ -9,11 +9,12 @@
   "scripts": {
     "install:all": "npm install --workspaces --include-workspace-root",
     "bootstrap": "npm run install:all",
-    "build": "npm run build --workspaces --if-present",
+    "build": "npm run build:shared && npm run build:api && npm run build:mobile",
     "build:shared": "npm run build --workspace @real-estate/shared",
     "build:api": "npm run build --workspace @real-estate/api",
     "build:mobile": "npm run build --workspace @real-estate/mobile --if-present",
     "build:all": "npm run build:shared && npm run build:api && npm run build:mobile",
+    "dev:db": "powershell -ExecutionPolicy Bypass -File ./scripts/dev-db.ps1",
     "dev": "npm run dev:api & npm run dev:mobile",
     "kill:dev-ports": "npx --yes kill-port 4000 8081 19000 19001 19002 || true",
     "dev:clean": "npm run kill:dev-ports && npm run dev",

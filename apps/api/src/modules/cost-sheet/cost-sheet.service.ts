@@ -1,4 +1,4 @@
-import { CostSheetDTO } from '@real-estate/shared';
+import type { CostSheetDTO } from '@real-estate/shared';
 import { env } from '../../config/env';
 
 export function computeCostSheet(basePrice: number): CostSheetDTO {

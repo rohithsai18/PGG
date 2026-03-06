@@ -26,4 +26,4 @@ COPY --from=builder /app/packages/shared/dist ./packages/shared/dist
 COPY --from=builder /app/packages/shared/package.json ./packages/shared/package.json
 EXPOSE 4000
 WORKDIR /app/apps/api
-CMD ["node", "dist/server.js"]
+CMD ["npm", "start"]

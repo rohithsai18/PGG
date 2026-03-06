@@ -1,4 +1,4 @@
-import { BookingDTO, CostSheetDTO, UnitDTO, UserDTO } from '@real-estate/shared';
+import type { BookingDTO, CostSheetDTO, UnitDTO, UserDTO } from '@real-estate/shared';
 
 export type { BookingDTO, CostSheetDTO, UnitDTO, UserDTO };
 
