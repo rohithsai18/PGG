@@ -1,7 +1,26 @@
 import { BookingStatus, PrismaClient, UnitStatus } from '@prisma/client';
-import { computeCostSheet } from '../src/modules/cost-sheet/cost-sheet.service';
 
 const prisma = new PrismaClient();
+
+function computeCostSheet(basePrice: number) {
+  const gstPercent = Number(process.env.CHARGE_GST_PERCENT ?? 5);
+  const registrationPercent = Number(process.env.CHARGE_REGISTRATION_PERCENT ?? 2);
+  const otherCharges = Number(process.env.CHARGE_OTHER_FIXED ?? 250000);
+  const formulaVersion = process.env.COST_SHEET_FORMULA_VERSION ?? 'v1';
+
+  const gst = Math.round((basePrice * gstPercent) / 100);
+  const registration = Math.round((basePrice * registrationPercent) / 100);
+  const total = basePrice + gst + registration + otherCharges;
+
+  return {
+    basePrice,
+    gst,
+    registration,
+    otherCharges,
+    total,
+    formulaVersion
+  };
+}
 
 async function main() {
   const user1 = await prisma.user.upsert({
