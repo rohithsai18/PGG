@@ -1,0 +1,35 @@
+{
+  "name": "real-estate-booking-demo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces --include-workspace-root",
+    "bootstrap": "npm run install:all",
+    "build": "npm run build --workspaces --if-present",
+    "build:shared": "npm run build --workspace @real-estate/shared",
+    "build:api": "npm run build --workspace @real-estate/api",
+    "build:mobile": "npm run build --workspace @real-estate/mobile --if-present",
+    "build:all": "npm run build:shared && npm run build:api && npm run build:mobile",
+    "dev": "npm run dev:api & npm run dev:mobile",
+    "kill:dev-ports": "npx --yes kill-port 4000 8081 19000 19001 19002 || true",
+    "dev:clean": "npm run kill:dev-ports && npm run dev",
+    "dev:api:clean": "npx --yes kill-port 4000 || true && npm run dev:api",
+    "dev:mobile:clean": "npx --yes kill-port 8081 19000 19001 19002 || true && npm run dev:mobile",
+    "dev:api": "npm run dev --workspace @real-estate/api",
+    "dev:mobile": "npm run dev --workspace @real-estate/mobile",
+    "dev:web": "npm run web --workspace @real-estate/mobile",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "npm run format --workspaces --if-present",
+    "apk": "npm run build:apk --workspace @real-estate/mobile",
+    "ios:build": "npm run build:ios --workspace @real-estate/mobile"
+  },
+  "dependencies": {
+    "react-dom": "18.3.1",
+    "react-native-web": "~0.19.13"
+  }
+}

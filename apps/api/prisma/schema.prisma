@@ -1,0 +1,101 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UnitStatus {
+  AVAILABLE
+  RESERVED
+  BOOKED
+}
+
+enum BookingStatus {
+  PENDING_PAYMENT
+  CONFIRMED
+  CANCELLED
+}
+
+model User {
+  id           String       @id @default(uuid()) @db.Uuid
+  name         String
+  phone        String       @unique
+  email        String?
+  address      String?
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  kycDocument  KycDocument?
+  bookings     Booking[]
+
+  @@index([phone])
+}
+
+model KycDocument {
+  id            String   @id @default(uuid()) @db.Uuid
+  userId        String   @unique @db.Uuid
+  panNumber     String
+  aadhaarNumber String
+  panFileUrl    String?
+  aadhaarFileUrl String?
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Unit {
+  id         String     @id @default(uuid()) @db.Uuid
+  tower      String
+  unitNumber String
+  areaSqft   Int
+  price      Int
+  status     UnitStatus @default(AVAILABLE)
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  bookings   Booking[]
+
+  @@index([status])
+  @@unique([tower, unitNumber])
+}
+
+model Booking {
+  id            String        @id @default(uuid()) @db.Uuid
+  userId        String        @db.Uuid
+  unitId        String        @db.Uuid
+  bookingAmount Int
+  bookingStatus BookingStatus @default(PENDING_PAYMENT)
+  paymentRef    String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  unit          Unit          @relation(fields: [unitId], references: [id], onDelete: Restrict)
+  costSheet     CostSheet?
+
+  @@index([userId])
+  @@index([unitId])
+}
+
+model CostSheet {
+  id             String   @id @default(uuid()) @db.Uuid
+  bookingId      String   @unique @db.Uuid
+  basePrice      Int
+  gst            Int
+  registration   Int
+  otherCharges   Int
+  total          Int
+  formulaVersion String
+  createdAt      DateTime @default(now())
+  booking        Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+}
+
+model OtpRequest {
+  id        String    @id @default(uuid()) @db.Uuid
+  phone     String
+  otp       String
+  expiresAt DateTime
+  verifiedAt DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([phone])
+}

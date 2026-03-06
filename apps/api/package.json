@@ -1,0 +1,50 @@
+{
+  "name": "@real-estate/api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:migrate:deploy": "prisma migrate deploy",
+    "prisma:seed": "ts-node prisma/seed.ts",
+    "prisma:seed:deploy": "prisma db seed"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "dependencies": {
+    "@real-estate/shared": "1.0.0",
+    "@prisma/client": "^5.20.0",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "nanoid": "^5.0.8",
+    "pino": "^9.5.0",
+    "pino-http": "^10.3.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.7.5",
+    "prisma": "^5.20.0",
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2"
+  }
+}

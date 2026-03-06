@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: real-estate-demo-api
+    runtime: node
+    rootDir: apps/api
+    buildCommand: npm install && npm run prisma:generate && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: DEMO_OTP_CODE
+        value: 123456
+      - key: OTP_TTL_MINUTES
+        value: 10
+      - key: CORS_ORIGINS
+        sync: false
+      - key: CHARGE_GST_PERCENT
+        value: 5
+      - key: CHARGE_REGISTRATION_PERCENT
+        value: 2
+      - key: CHARGE_OTHER_FIXED
+        value: 250000
+      - key: COST_SHEET_FORMULA_VERSION
+        value: v1
+      - key: BROCHURE_FILE_PATH
+        value: assets/brochure.pdf
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: CLOUDINARY_FOLDER
+        value: real-estate-demo
