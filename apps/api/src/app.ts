@@ -9,6 +9,9 @@ import { errorHandler } from './middleware/error-handler';
 
 export const app = express();
 
+// Railway forwards the original client IP via X-Forwarded-For.
+app.set('trust proxy', 1);
+
 app.use(helmet());
 app.use(cors({ origin: corsOrigins }));
 app.use(express.json({ limit: '5mb' }));

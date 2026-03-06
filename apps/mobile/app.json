@@ -11,6 +11,17 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "aaa374ca-0fa9-4214-aac0-537cb637cdbf"
+      }
+    },
+    "android": {
+      "package": "com.rohithsai18.realestatedemo"
     }
   }
 }

@@ -6,6 +6,9 @@
     "apps/*",
     "packages/*"
   ],
+  "overrides": {
+    "react-native-screens": "~4.4.0"
+  },
   "scripts": {
     "install:all": "npm install --workspaces --include-workspace-root",
     "bootstrap": "npm run install:all",
@@ -31,6 +34,7 @@
   },
   "dependencies": {
     "react-dom": "18.3.1",
+    "react-native-screens": "~4.4.0",
     "react-native-web": "~0.19.13"
   }
 }
