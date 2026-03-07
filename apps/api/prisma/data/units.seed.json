@@ -1,0 +1,2725 @@
+[
+  {
+    "tower": "T1",
+    "unitNumber": "10001",
+    "areaSqft": 3036,
+    "price": 26247000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10002",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10003",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10004",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10005",
+    "areaSqft": 2429,
+    "price": 20839250,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10006",
+    "areaSqft": 2101,
+    "price": 18658500,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10007",
+    "areaSqft": 2100,
+    "price": 18020000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10008",
+    "areaSqft": 2101,
+    "price": 18133250,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10009",
+    "areaSqft": 1596,
+    "price": 13327600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10011",
+    "areaSqft": 1944,
+    "price": 16838000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10101",
+    "areaSqft": 3036,
+    "price": 26247000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10102",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10103",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10104",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10105",
+    "areaSqft": 2429,
+    "price": 20839250,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10106",
+    "areaSqft": 2101,
+    "price": 18658500,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10107",
+    "areaSqft": 2100,
+    "price": 18020000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10108",
+    "areaSqft": 2101,
+    "price": 18133250,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10109",
+    "areaSqft": 1596,
+    "price": 13327600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10111",
+    "areaSqft": 1944,
+    "price": 16838000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10201",
+    "areaSqft": 3036,
+    "price": 26307720,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10202",
+    "areaSqft": 2091,
+    "price": 17778920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10203",
+    "areaSqft": 2091,
+    "price": 17778920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10204",
+    "areaSqft": 2091,
+    "price": 17778920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10205",
+    "areaSqft": 2429,
+    "price": 20887830,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10206",
+    "areaSqft": 2101,
+    "price": 18700520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10207",
+    "areaSqft": 2100,
+    "price": 18062000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10208",
+    "areaSqft": 2101,
+    "price": 18175270,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10211",
+    "areaSqft": 1944,
+    "price": 16876880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10301",
+    "areaSqft": 3036,
+    "price": 26368440,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10302",
+    "areaSqft": 2091,
+    "price": 17820740,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10303",
+    "areaSqft": 2091,
+    "price": 17820740,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10304",
+    "areaSqft": 2091,
+    "price": 17820740,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10305",
+    "areaSqft": 2429,
+    "price": 20936410,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10308",
+    "areaSqft": 2101,
+    "price": 18217290,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10311",
+    "areaSqft": 1944,
+    "price": 16915760,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10401",
+    "areaSqft": 3036,
+    "price": 26429160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10402",
+    "areaSqft": 2091,
+    "price": 17862560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10403",
+    "areaSqft": 2091,
+    "price": 17862560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10404",
+    "areaSqft": 2091,
+    "price": 17862560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10405",
+    "areaSqft": 2429,
+    "price": 20984990,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10407",
+    "areaSqft": 2100,
+    "price": 18146000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10408",
+    "areaSqft": 2101,
+    "price": 18259310,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10411",
+    "areaSqft": 1944,
+    "price": 16954640,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10501",
+    "areaSqft": 3036,
+    "price": 26489880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10502",
+    "areaSqft": 2091,
+    "price": 17904380,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10503",
+    "areaSqft": 2091,
+    "price": 17904380,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10504",
+    "areaSqft": 2091,
+    "price": 17904380,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10505",
+    "areaSqft": 2429,
+    "price": 21033570,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10508",
+    "areaSqft": 2101,
+    "price": 18301330,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10511",
+    "areaSqft": 1944,
+    "price": 16993520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10601",
+    "areaSqft": 3036,
+    "price": 26550600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10602",
+    "areaSqft": 2091,
+    "price": 17946200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10603",
+    "areaSqft": 2091,
+    "price": 17946200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10604",
+    "areaSqft": 2091,
+    "price": 17946200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10605",
+    "areaSqft": 2429,
+    "price": 21082150,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10611",
+    "areaSqft": 1944,
+    "price": 17032400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10701",
+    "areaSqft": 3036,
+    "price": 26611320,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10702",
+    "areaSqft": 2091,
+    "price": 17988020,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10703",
+    "areaSqft": 2091,
+    "price": 17988020,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10704",
+    "areaSqft": 2091,
+    "price": 17988020,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10705",
+    "areaSqft": 2429,
+    "price": 21130730,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10711",
+    "areaSqft": 1944,
+    "price": 17071280,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10801",
+    "areaSqft": 3036,
+    "price": 26672040,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10802",
+    "areaSqft": 2091,
+    "price": 18029840,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10803",
+    "areaSqft": 2091,
+    "price": 18029840,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10804",
+    "areaSqft": 2091,
+    "price": 18029840,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10902",
+    "areaSqft": 2091,
+    "price": 18071660,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "10903",
+    "areaSqft": 2091,
+    "price": 18071660,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11001",
+    "areaSqft": 3036,
+    "price": 26793480,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11002",
+    "areaSqft": 2091,
+    "price": 18113480,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11101",
+    "areaSqft": 3036,
+    "price": 26854200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11102",
+    "areaSqft": 2091,
+    "price": 18155300,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11103",
+    "areaSqft": 2091,
+    "price": 18155300,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11201",
+    "areaSqft": 3036,
+    "price": 26914920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11203",
+    "areaSqft": 2091,
+    "price": 18197120,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11301",
+    "areaSqft": 3036,
+    "price": 26975640,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11302",
+    "areaSqft": 2091,
+    "price": 18238940,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11303",
+    "areaSqft": 2091,
+    "price": 18238940,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11305",
+    "areaSqft": 2429,
+    "price": 21422210,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11311",
+    "areaSqft": 1944,
+    "price": 17304560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11401",
+    "areaSqft": 3036,
+    "price": 27036360,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11501",
+    "areaSqft": 3036,
+    "price": 27097080,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11603",
+    "areaSqft": 2091,
+    "price": 18364400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11711",
+    "areaSqft": 1944,
+    "price": 17460080,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11803",
+    "areaSqft": 2091,
+    "price": 18448040,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11901",
+    "areaSqft": 3036,
+    "price": 27339960,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11903",
+    "areaSqft": 2091,
+    "price": 18489860,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "11908",
+    "areaSqft": 2101,
+    "price": 18889610,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12001",
+    "areaSqft": 3036,
+    "price": 27400680,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12011",
+    "areaSqft": 1944,
+    "price": 17576720,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12103",
+    "areaSqft": 2091,
+    "price": 18573500,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12108",
+    "areaSqft": 2101,
+    "price": 18973650,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12201",
+    "areaSqft": 3036,
+    "price": 27522120,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12203",
+    "areaSqft": 2091,
+    "price": 18615320,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12208",
+    "areaSqft": 2101,
+    "price": 19015670,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12211",
+    "areaSqft": 1944,
+    "price": 17654480,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12301",
+    "areaSqft": 3036,
+    "price": 27582840,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12302",
+    "areaSqft": 2091,
+    "price": 18657140,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12303",
+    "areaSqft": 2091,
+    "price": 18657140,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12311",
+    "areaSqft": 1944,
+    "price": 17693360,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12401",
+    "areaSqft": 3036,
+    "price": 27643560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12408",
+    "areaSqft": 2101,
+    "price": 19099710,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12411",
+    "areaSqft": 1944,
+    "price": 17732240,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12508",
+    "areaSqft": 2101,
+    "price": 19141730,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12511",
+    "areaSqft": 1944,
+    "price": 17771120,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12603",
+    "areaSqft": 2091,
+    "price": 18782600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12605",
+    "areaSqft": 2429,
+    "price": 22053750,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12607",
+    "areaSqft": 2100,
+    "price": 19070000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12608",
+    "areaSqft": 2101,
+    "price": 19183750,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12611",
+    "areaSqft": 1944,
+    "price": 17810000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12702",
+    "areaSqft": 2091,
+    "price": 18824420,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12703",
+    "areaSqft": 2091,
+    "price": 18824420,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12707",
+    "areaSqft": 2100,
+    "price": 19112000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12708",
+    "areaSqft": 2101,
+    "price": 19225770,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12711",
+    "areaSqft": 1944,
+    "price": 17848880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12802",
+    "areaSqft": 2091,
+    "price": 18866240,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12803",
+    "areaSqft": 2091,
+    "price": 18866240,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12808",
+    "areaSqft": 2101,
+    "price": 19267790,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12811",
+    "areaSqft": 1944,
+    "price": 17887760,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12901",
+    "areaSqft": 3036,
+    "price": 27947160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12902",
+    "areaSqft": 2091,
+    "price": 18908060,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12905",
+    "areaSqft": 2429,
+    "price": 22199490,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12908",
+    "areaSqft": 2101,
+    "price": 19309810,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "12911",
+    "areaSqft": 1944,
+    "price": 17926640,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13002",
+    "areaSqft": 2091,
+    "price": 18949880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13003",
+    "areaSqft": 2091,
+    "price": 18949880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13005",
+    "areaSqft": 2429,
+    "price": 22248070,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13007",
+    "areaSqft": 2100,
+    "price": 19238000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13008",
+    "areaSqft": 2101,
+    "price": 19351830,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13011",
+    "areaSqft": 1944,
+    "price": 17965520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13102",
+    "areaSqft": 2091,
+    "price": 18991700,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13103",
+    "areaSqft": 2091,
+    "price": 18991700,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13107",
+    "areaSqft": 2100,
+    "price": 19280000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13108",
+    "areaSqft": 2101,
+    "price": 19393850,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13111",
+    "areaSqft": 1944,
+    "price": 18004400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13201",
+    "areaSqft": 3036,
+    "price": 28129320,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13202",
+    "areaSqft": 2091,
+    "price": 19033520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13203",
+    "areaSqft": 2091,
+    "price": 19033520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13208",
+    "areaSqft": 2101,
+    "price": 19435870,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13211",
+    "areaSqft": 1944,
+    "price": 18043280,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13302",
+    "areaSqft": 2091,
+    "price": 19075340,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13303",
+    "areaSqft": 2091,
+    "price": 19075340,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13304",
+    "areaSqft": 2091,
+    "price": 19075340,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13305",
+    "areaSqft": 2429,
+    "price": 22393810,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13307",
+    "areaSqft": 2100,
+    "price": 19364000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13308",
+    "areaSqft": 2101,
+    "price": 19477890,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13311",
+    "areaSqft": 1944,
+    "price": 18082160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13402",
+    "areaSqft": 2091,
+    "price": 19117160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13403",
+    "areaSqft": 2091,
+    "price": 19117160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13404",
+    "areaSqft": 2091,
+    "price": 19117160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13405",
+    "areaSqft": 2429,
+    "price": 22442390,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13407",
+    "areaSqft": 2100,
+    "price": 19406000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13408",
+    "areaSqft": 2101,
+    "price": 19519910,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T1",
+    "unitNumber": "13411",
+    "areaSqft": 1944,
+    "price": 18121040,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20001",
+    "areaSqft": 3036,
+    "price": 26247000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20002",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20003",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20004",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20005",
+    "areaSqft": 2429,
+    "price": 20839250,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20006",
+    "areaSqft": 2407,
+    "price": 21018800,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20007",
+    "areaSqft": 1596,
+    "price": 13327600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20011",
+    "areaSqft": 2451,
+    "price": 21265850,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20101",
+    "areaSqft": 3036,
+    "price": 26247000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20102",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20103",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20104",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20105",
+    "areaSqft": 2429,
+    "price": 20839250,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20106",
+    "areaSqft": 2407,
+    "price": 21018800,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20201",
+    "areaSqft": 3036,
+    "price": 26307720,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20202",
+    "areaSqft": 2091,
+    "price": 17778920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20203",
+    "areaSqft": 2091,
+    "price": 17778920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20204",
+    "areaSqft": 2091,
+    "price": 17778920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20205",
+    "areaSqft": 2429,
+    "price": 20887830,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20206",
+    "areaSqft": 2407,
+    "price": 21066940,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20211",
+    "areaSqft": 2451,
+    "price": 21314870,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20301",
+    "areaSqft": 3036,
+    "price": 26368440,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20302",
+    "areaSqft": 2091,
+    "price": 17820740,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20303",
+    "areaSqft": 2091,
+    "price": 17820740,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20304",
+    "areaSqft": 2091,
+    "price": 17820740,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20305",
+    "areaSqft": 2429,
+    "price": 20936410,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20306",
+    "areaSqft": 2407,
+    "price": 21115080,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20401",
+    "areaSqft": 3036,
+    "price": 26429160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20402",
+    "areaSqft": 2091,
+    "price": 17862560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20403",
+    "areaSqft": 2091,
+    "price": 17862560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20404",
+    "areaSqft": 2091,
+    "price": 17862560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20405",
+    "areaSqft": 2429,
+    "price": 20984990,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20501",
+    "areaSqft": 3036,
+    "price": 26489880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20502",
+    "areaSqft": 2091,
+    "price": 17904380,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20503",
+    "areaSqft": 2091,
+    "price": 17904380,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20601",
+    "areaSqft": 3036,
+    "price": 26550600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "20602",
+    "areaSqft": 2091,
+    "price": 17946200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "21301",
+    "areaSqft": 3036,
+    "price": 26975640,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "22401",
+    "areaSqft": 3036,
+    "price": 27643560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "22701",
+    "areaSqft": 3036,
+    "price": 27825720,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "22911",
+    "areaSqft": 2451,
+    "price": 22638410,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "23011",
+    "areaSqft": 2451,
+    "price": 22687430,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "23111",
+    "areaSqft": 2451,
+    "price": 22736450,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "23201",
+    "areaSqft": 3036,
+    "price": 28129320,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "23211",
+    "areaSqft": 2451,
+    "price": 22785470,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "23311",
+    "areaSqft": 2451,
+    "price": 22834490,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "23402",
+    "areaSqft": 2091,
+    "price": 19117160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "23403",
+    "areaSqft": 2091,
+    "price": 19117160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "23409",
+    "areaSqft": 1596,
+    "price": 14540560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T2",
+    "unitNumber": "23411",
+    "areaSqft": 2451,
+    "price": 22883510,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30001",
+    "areaSqft": 3036,
+    "price": 26550600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30002",
+    "areaSqft": 2091,
+    "price": 17946200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30003",
+    "areaSqft": 2091,
+    "price": 17946200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30102",
+    "areaSqft": 2091,
+    "price": 17946200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30201",
+    "areaSqft": 3036,
+    "price": 26611320,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30202",
+    "areaSqft": 2091,
+    "price": 17988020,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30203",
+    "areaSqft": 2091,
+    "price": 17988020,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30207",
+    "areaSqft": 1944,
+    "price": 16876880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30208",
+    "areaSqft": 1944,
+    "price": 16876880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30209",
+    "areaSqft": 1944,
+    "price": 16876880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30301",
+    "areaSqft": 3036,
+    "price": 26672040,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30302",
+    "areaSqft": 2091,
+    "price": 18029840,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30303",
+    "areaSqft": 2091,
+    "price": 18029840,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30307",
+    "areaSqft": 1944,
+    "price": 16915760,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30308",
+    "areaSqft": 1944,
+    "price": 16915760,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30309",
+    "areaSqft": 1944,
+    "price": 16915760,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30401",
+    "areaSqft": 3036,
+    "price": 26732760,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30402",
+    "areaSqft": 2091,
+    "price": 18071660,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30403",
+    "areaSqft": 2091,
+    "price": 18071660,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30407",
+    "areaSqft": 1944,
+    "price": 16954640,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30408",
+    "areaSqft": 1944,
+    "price": 16954640,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30409",
+    "areaSqft": 1944,
+    "price": 16604720,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30507",
+    "areaSqft": 1944,
+    "price": 16993520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30508",
+    "areaSqft": 1944,
+    "price": 16993520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30601",
+    "areaSqft": 3036,
+    "price": 26854200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30602",
+    "areaSqft": 2091,
+    "price": 18155300,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30603",
+    "areaSqft": 2091,
+    "price": 18155300,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30607",
+    "areaSqft": 1944,
+    "price": 17032400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30608",
+    "areaSqft": 1944,
+    "price": 17032400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30701",
+    "areaSqft": 3036,
+    "price": 26914920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30702",
+    "areaSqft": 2091,
+    "price": 18197120,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30703",
+    "areaSqft": 2091,
+    "price": 18197120,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30801",
+    "areaSqft": 3036,
+    "price": 26975640,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30802",
+    "areaSqft": 2091,
+    "price": 18238940,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30803",
+    "areaSqft": 2091,
+    "price": 18238940,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30807",
+    "areaSqft": 1944,
+    "price": 17110160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30808",
+    "areaSqft": 1944,
+    "price": 17110160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "30903",
+    "areaSqft": 2091,
+    "price": 18280760,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31002",
+    "areaSqft": 2091,
+    "price": 18322580,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31103",
+    "areaSqft": 2091,
+    "price": 18364400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31202",
+    "areaSqft": 2091,
+    "price": 18406220,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31203",
+    "areaSqft": 2091,
+    "price": 18406220,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31301",
+    "areaSqft": 3036,
+    "price": 27279240,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31302",
+    "areaSqft": 2091,
+    "price": 18448040,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31303",
+    "areaSqft": 2091,
+    "price": 18448040,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31307",
+    "areaSqft": 1944,
+    "price": 17304560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31308",
+    "areaSqft": 1944,
+    "price": 17304560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31403",
+    "areaSqft": 2091,
+    "price": 18489860,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31702",
+    "areaSqft": 2091,
+    "price": 18615320,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31703",
+    "areaSqft": 2091,
+    "price": 18615320,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31707",
+    "areaSqft": 1944,
+    "price": 17110160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31802",
+    "areaSqft": 2091,
+    "price": 18657140,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31902",
+    "areaSqft": 2091,
+    "price": 18698960,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "31903",
+    "areaSqft": 2091,
+    "price": 18698960,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32003",
+    "areaSqft": 2091,
+    "price": 18740780,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32102",
+    "areaSqft": 2091,
+    "price": 18782600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32103",
+    "areaSqft": 2091,
+    "price": 18782600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32203",
+    "areaSqft": 2091,
+    "price": 18824420,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32401",
+    "areaSqft": 3036,
+    "price": 27947160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32402",
+    "areaSqft": 2091,
+    "price": 18908060,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32403",
+    "areaSqft": 2091,
+    "price": 18908060,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32501",
+    "areaSqft": 3036,
+    "price": 28007880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32502",
+    "areaSqft": 2091,
+    "price": 18949880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32503",
+    "areaSqft": 2091,
+    "price": 18949880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32601",
+    "areaSqft": 3036,
+    "price": 28068600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32602",
+    "areaSqft": 2091,
+    "price": 18991700,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32603",
+    "areaSqft": 2091,
+    "price": 18991700,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32701",
+    "areaSqft": 3036,
+    "price": 28129320,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32702",
+    "areaSqft": 2091,
+    "price": 19033520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32703",
+    "areaSqft": 2091,
+    "price": 19033520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32802",
+    "areaSqft": 2091,
+    "price": 19075340,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32803",
+    "areaSqft": 2091,
+    "price": 19075340,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32901",
+    "areaSqft": 3036,
+    "price": 28250760,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32902",
+    "areaSqft": 2091,
+    "price": 19117160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "32903",
+    "areaSqft": 2091,
+    "price": 19117160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33001",
+    "areaSqft": 3036,
+    "price": 28311480,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33002",
+    "areaSqft": 2091,
+    "price": 19158980,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33003",
+    "areaSqft": 2091,
+    "price": 19158980,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33101",
+    "areaSqft": 3036,
+    "price": 28372200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33102",
+    "areaSqft": 2091,
+    "price": 19200800,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33103",
+    "areaSqft": 2091,
+    "price": 19200800,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33208",
+    "areaSqft": 1944,
+    "price": 17693360,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33301",
+    "areaSqft": 3036,
+    "price": 28493640,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33302",
+    "areaSqft": 2091,
+    "price": 19284440,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33303",
+    "areaSqft": 2091,
+    "price": 19284440,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33401",
+    "areaSqft": 3036,
+    "price": 28554360,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33402",
+    "areaSqft": 2091,
+    "price": 19326260,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T3",
+    "unitNumber": "33403",
+    "areaSqft": 2091,
+    "price": 19326260,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40001",
+    "areaSqft": 3065,
+    "price": 28018750,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40002",
+    "areaSqft": 2100,
+    "price": 18545000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40003",
+    "areaSqft": 1576,
+    "price": 13953600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40004",
+    "areaSqft": 1596,
+    "price": 13886200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40005",
+    "areaSqft": 2451,
+    "price": 21878600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40007",
+    "areaSqft": 1944,
+    "price": 16546400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40008",
+    "areaSqft": 1944,
+    "price": 16838000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40009",
+    "areaSqft": 2407,
+    "price": 21018800,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40010",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40011",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40012",
+    "areaSqft": 2429,
+    "price": 21082150,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40101",
+    "areaSqft": 3065,
+    "price": 28018750,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40102",
+    "areaSqft": 2100,
+    "price": 18545000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40105",
+    "areaSqft": 2451,
+    "price": 21878600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40107",
+    "areaSqft": 1944,
+    "price": 16546400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40108",
+    "areaSqft": 1944,
+    "price": 16838000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40109",
+    "areaSqft": 2407,
+    "price": 21018800,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40110",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40111",
+    "areaSqft": 2091,
+    "price": 17737100,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40112",
+    "areaSqft": 2429,
+    "price": 21082150,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40202",
+    "areaSqft": 2100,
+    "price": 18587000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40205",
+    "areaSqft": 2451,
+    "price": 21927620,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40206",
+    "areaSqft": 1944,
+    "price": 16585280,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40207",
+    "areaSqft": 1944,
+    "price": 16585280,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40208",
+    "areaSqft": 1944,
+    "price": 16876880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40209",
+    "areaSqft": 2407,
+    "price": 21066940,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40210",
+    "areaSqft": 2091,
+    "price": 17778920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40211",
+    "areaSqft": 2091,
+    "price": 17778920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40212",
+    "areaSqft": 2429,
+    "price": 21130730,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40302",
+    "areaSqft": 2100,
+    "price": 18629000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40306",
+    "areaSqft": 1944,
+    "price": 16624160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40307",
+    "areaSqft": 1944,
+    "price": 16624160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40308",
+    "areaSqft": 1944,
+    "price": 16915760,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40310",
+    "areaSqft": 2091,
+    "price": 17820740,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40311",
+    "areaSqft": 2091,
+    "price": 17820740,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40312",
+    "areaSqft": 2429,
+    "price": 21179310,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40402",
+    "areaSqft": 2100,
+    "price": 18671000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40405",
+    "areaSqft": 2451,
+    "price": 22025660,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40406",
+    "areaSqft": 1944,
+    "price": 16663040,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40407",
+    "areaSqft": 1944,
+    "price": 16663040,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40409",
+    "areaSqft": 2407,
+    "price": 21163220,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40410",
+    "areaSqft": 2091,
+    "price": 17862560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40506",
+    "areaSqft": 1944,
+    "price": 16701920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40507",
+    "areaSqft": 1944,
+    "price": 16701920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40510",
+    "areaSqft": 2091,
+    "price": 17904380,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40606",
+    "areaSqft": 1944,
+    "price": 16740800,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40610",
+    "areaSqft": 2091,
+    "price": 17946200,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40706",
+    "areaSqft": 1944,
+    "price": 16779680,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40710",
+    "areaSqft": 2091,
+    "price": 17988020,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40806",
+    "areaSqft": 1944,
+    "price": 16818560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "40810",
+    "areaSqft": 2091,
+    "price": 18029840,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "41010",
+    "areaSqft": 2091,
+    "price": 18113480,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "41207",
+    "areaSqft": 1944,
+    "price": 16974080,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "41307",
+    "areaSqft": 1944,
+    "price": 17012960,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "41507",
+    "areaSqft": 1944,
+    "price": 15341120,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "41606",
+    "areaSqft": 1944,
+    "price": 17129600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "41907",
+    "areaSqft": 1944,
+    "price": 17246240,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42007",
+    "areaSqft": 1944,
+    "price": 17285120,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42010",
+    "areaSqft": 2091,
+    "price": 18531680,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42106",
+    "areaSqft": 1944,
+    "price": 17324000,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42210",
+    "areaSqft": 2091,
+    "price": 18615320,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42407",
+    "areaSqft": 1944,
+    "price": 17440640,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42507",
+    "areaSqft": 1944,
+    "price": 17479520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42510",
+    "areaSqft": 2091,
+    "price": 18740780,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42606",
+    "areaSqft": 1944,
+    "price": 17518400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42607",
+    "areaSqft": 1944,
+    "price": 17518400,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42610",
+    "areaSqft": 2091,
+    "price": 18782600,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42706",
+    "areaSqft": 1944,
+    "price": 17557280,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42707",
+    "areaSqft": 1944,
+    "price": 17557280,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42710",
+    "areaSqft": 2091,
+    "price": 18824420,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42806",
+    "areaSqft": 1944,
+    "price": 17596160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42807",
+    "areaSqft": 1944,
+    "price": 17596160,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42810",
+    "areaSqft": 2091,
+    "price": 16984340,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "42811",
+    "areaSqft": 2091,
+    "price": 18866240,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43006",
+    "areaSqft": 1944,
+    "price": 17673920,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43010",
+    "areaSqft": 2091,
+    "price": 18949880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43011",
+    "areaSqft": 2091,
+    "price": 18949880,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43106",
+    "areaSqft": 1944,
+    "price": 17712800,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43107",
+    "areaSqft": 1944,
+    "price": 17712800,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43110",
+    "areaSqft": 2091,
+    "price": 18991700,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43111",
+    "areaSqft": 2091,
+    "price": 18991700,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43206",
+    "areaSqft": 1944,
+    "price": 17751680,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43207",
+    "areaSqft": 1944,
+    "price": 17751680,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43209",
+    "areaSqft": 2407,
+    "price": 22511140,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43210",
+    "areaSqft": 2091,
+    "price": 19033520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43211",
+    "areaSqft": 2091,
+    "price": 19033520,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43306",
+    "areaSqft": 1944,
+    "price": 17790560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43307",
+    "areaSqft": 1944,
+    "price": 17790560,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43309",
+    "areaSqft": 2407,
+    "price": 22559280,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43310",
+    "areaSqft": 2091,
+    "price": 19075340,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43311",
+    "areaSqft": 2091,
+    "price": 19075340,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43406",
+    "areaSqft": 1944,
+    "price": 17829440,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43407",
+    "areaSqft": 1944,
+    "price": 17829440,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43408",
+    "areaSqft": 1944,
+    "price": 18121040,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43409",
+    "areaSqft": 2407,
+    "price": 22607420,
+    "status": "AVAILABLE"
+  },
+  {
+    "tower": "T4",
+    "unitNumber": "43410",
+    "areaSqft": 2091,
+    "price": 19117160,
+    "status": "AVAILABLE"
+  }
+]

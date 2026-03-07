@@ -31,6 +31,13 @@ cp apps/api/.env.example apps/api/.env
 cp apps/mobile/.env.example apps/mobile/.env
 ```
 
+Mobile env presets are also available:
+```bash
+npm run env:mobile:local
+npm run env:mobile:railway
+```
+Restart Expo after switching because `EXPO_PUBLIC_*` variables are read at startup.
+
 3. Start PostgreSQL for local development:
 ```bash
 npm run dev:db
@@ -56,6 +63,17 @@ npm run dev --workspace @real-estate/api
 npm run dev --workspace @real-estate/mobile
 ```
 
+## Env Modes
+- API local development uses [apps/api/.env](/c:/Users/USER/PGG/PGG/apps/api/.env).
+- API Railway deployment uses [\.env.railway.example](/c:/Users/USER/PGG/PGG/.env.railway.example) as the variable template for Railway service settings.
+- Mobile local preset is [apps/mobile/.env.local](/c:/Users/USER/PGG/PGG/apps/mobile/.env.local).
+- Mobile Railway preset is [apps/mobile/.env.railway](/c:/Users/USER/PGG/PGG/apps/mobile/.env.railway).
+- The active mobile env file consumed by Expo is [apps/mobile/.env](/c:/Users/USER/PGG/PGG/apps/mobile/.env); switch it with:
+```bash
+npm run env:mobile:local
+npm run env:mobile:railway
+```
+
 ## Root Commands
 From the project root:
 ```bash
@@ -65,7 +83,11 @@ npm run dev:db          # start local Postgres on localhost:5436 via Docker
 npm run dev:api         # start API dev server
 npm run dev:mobile      # start Expo mobile dev server
 npm run apk             # trigger EAS Android APK build
+npm run ios:configure   # one-time interactive iOS credential setup with Expo/Apple
 npm run ios:build       # trigger EAS iOS build
+npm run ios:download    # download the latest finished iOS IPA into apps/mobile/builds/ios
+npm run ios:submit      # submit the latest iOS build to TestFlight
+npm run ios:testflight  # build, download the IPA locally, then submit to TestFlight
 ```
 
 ## Mobile Release Builds (APK / iOS)
@@ -76,8 +98,17 @@ Prerequisites:
 Commands:
 ```bash
 npm run apk
+npm run ios:configure
 npm run ios:build
+npm run ios:download
+npm run ios:submit
+npm run ios:testflight
 ```
+
+Notes:
+- Run `npm run ios:configure` once before the first non-interactive iOS/TestFlight build so EAS can create/validate Apple signing credentials
+- `npm run ios:testflight` stores the downloaded `.ipa` under `apps/mobile/builds/ios`
+- The production iOS build uses `EXPO_PUBLIC_API_BASE_URL=https://acceptable-communication-production-4b74.up.railway.app/api/v1`
 
 ## Booking Concurrency Safety
 - Booking creation uses an atomic conditional reserve (`status=AVAILABLE -> RESERVED`) inside a DB transaction.
@@ -100,9 +131,15 @@ Notes:
 ## Railway
 Railway deployment is configured for the API via [railway.json](/c:/Users/USER/PGG/PGG/railway.json).
 
+Seeding behavior:
+- Migrations run automatically on container start.
+- Runtime seeding runs only when `RUN_DB_SEED=true`.
+- Recommended Railway usage: set `RUN_DB_SEED=true` only for first bootstrap or a deliberate reseed, then set it back to `false`.
+
 Files:
 - [railway.json](/c:/Users/USER/PGG/PGG/railway.json) for Dockerfile-based Railway deployment and health checks
 - [\.env.railway.example](/c:/Users/USER/PGG/PGG/.env.railway.example) for API service variables
+- [\.env.railway.bootstrap.example](/c:/Users/USER/PGG/PGG/.env.railway.bootstrap.example) for one-time bootstrap variables with `RUN_DB_SEED=true`
 - [docs/railway-deploy.md](/c:/Users/USER/PGG/PGG/docs/railway-deploy.md) for the full Railway + APK flow
 
 ## CI

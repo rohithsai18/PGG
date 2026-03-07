@@ -1,6 +1,7 @@
 {
   "cli": {
-    "version": ">= 10.0.0"
+    "version": ">= 10.0.0",
+    "appVersionSource": "remote"
   },
   "build": {
     "preview": {
@@ -10,6 +11,10 @@
       }
     },
     "production": {
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://acceptable-communication-production-4b74.up.railway.app/api/v1"
+      },
+      "autoIncrement": true,
       "android": {
         "buildType": "app-bundle"
       },

@@ -1,26 +1,7 @@
-import { BookingStatus, PrismaClient, UnitStatus } from '@prisma/client';
+import { PrismaClient } from '@prisma/client';
+import { DEFAULT_UNIT_JSON_PATH, importUnitsFromSource, resolveImportSourcePath } from '../src/modules/units/unit-import';
 
 const prisma = new PrismaClient();
-
-function computeCostSheet(basePrice: number) {
-  const gstPercent = Number(process.env.CHARGE_GST_PERCENT ?? 5);
-  const registrationPercent = Number(process.env.CHARGE_REGISTRATION_PERCENT ?? 2);
-  const otherCharges = Number(process.env.CHARGE_OTHER_FIXED ?? 250000);
-  const formulaVersion = process.env.COST_SHEET_FORMULA_VERSION ?? 'v1';
-
-  const gst = Math.round((basePrice * gstPercent) / 100);
-  const registration = Math.round((basePrice * registrationPercent) / 100);
-  const total = basePrice + gst + registration + otherCharges;
-
-  return {
-    basePrice,
-    gst,
-    registration,
-    otherCharges,
-    total,
-    formulaVersion
-  };
-}
 
 async function main() {
   const user1 = await prisma.user.upsert({
@@ -53,70 +34,13 @@ async function main() {
     }
   });
 
-  const unitsData = Array.from({ length: 24 }, (_, idx) => {
-    const tower = `T-${Math.floor(idx / 8) + 1}`;
-    const unitNumber = `${Math.floor((idx % 8) + 1)}0${(idx % 4) + 1}`;
-    return {
-      tower,
-      unitNumber,
-      areaSqft: 900 + idx * 25,
-      price: 5000000 + idx * 200000,
-      status: UnitStatus.AVAILABLE
-    };
-  });
+  const workbookPath = await resolveImportSourcePath(process.env.UNIT_IMPORT_SOURCE_PATH ?? DEFAULT_UNIT_JSON_PATH);
 
-  for (const unit of unitsData) {
-    await prisma.unit.upsert({
-      where: {
-        tower_unitNumber: {
-          tower: unit.tower,
-          unitNumber: unit.unitNumber
-        }
-      },
-      update: {
-        areaSqft: unit.areaSqft,
-        price: unit.price,
-        status: unit.status
-      },
-      create: unit
-    });
-  }
-
-  const showcaseUnit = await prisma.unit.findFirst({ where: { status: UnitStatus.AVAILABLE } });
-  if (!showcaseUnit) {
-    return;
-  }
-
-  const existingShowcase = await prisma.booking.findFirst({
-    where: {
-      userId: user1.id,
-      bookingStatus: BookingStatus.CONFIRMED
-    }
-  });
-
-  if (!existingShowcase) {
-    const booking = await prisma.booking.create({
-      data: {
-        userId: user1.id,
-        unitId: showcaseUnit.id,
-        bookingAmount: 200000,
-        bookingStatus: BookingStatus.CONFIRMED,
-        paymentRef: 'PAY-SEED1234'
-      }
-    });
-
-    await prisma.unit.update({
-      where: { id: showcaseUnit.id },
-      data: { status: UnitStatus.BOOKED }
-    });
-
-    const costSheet = computeCostSheet(showcaseUnit.price);
-    await prisma.costSheet.create({
-      data: {
-        bookingId: booking.id,
-        ...costSheet
-      }
-    });
+  if (workbookPath) {
+    await importUnitsFromSource(prisma as any, workbookPath);
+  } else {
+    // eslint-disable-next-line no-console
+    console.warn('[unit-import] source file not found, skipping unit reseed');
   }
 
   await prisma.kycDocument.upsert({

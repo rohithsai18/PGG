@@ -2,6 +2,7 @@
   "name": "real-estate-booking-demo",
   "private": true,
   "version": "1.0.0",
+  "main": "index.js",
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -26,11 +27,17 @@
     "dev:api": "npm run dev --workspace @real-estate/api",
     "dev:mobile": "npm run dev --workspace @real-estate/mobile",
     "dev:web": "npm run web --workspace @real-estate/mobile",
+    "env:mobile:local": "powershell -ExecutionPolicy Bypass -File ./scripts/use-mobile-env.ps1 local",
+    "env:mobile:railway": "powershell -ExecutionPolicy Bypass -File ./scripts/use-mobile-env.ps1 railway",
     "test": "npm run test --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
     "format": "npm run format --workspaces --if-present",
     "apk": "npm run build:apk --workspace @real-estate/mobile",
-    "ios:build": "npm run build:ios --workspace @real-estate/mobile"
+    "ios:configure": "npm run ios:configure --workspace @real-estate/mobile",
+    "ios:build": "npm run build:ios --workspace @real-estate/mobile",
+    "ios:download": "npm run download:ios --workspace @real-estate/mobile",
+    "ios:submit": "npm run submit:ios:latest --workspace @real-estate/mobile",
+    "ios:testflight": "npm run build:testflight --workspace @real-estate/mobile"
   },
   "dependencies": {
     "react-dom": "18.3.1",
