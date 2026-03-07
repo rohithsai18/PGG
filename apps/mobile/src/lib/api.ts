@@ -30,6 +30,28 @@ function normalizeApiBaseUrl(raw: string): string {
 
 const API_BASE_URL = normalizeApiBaseUrl(RAW_API_BASE_URL);
 
+function buildErrorMessage(errorBody: any, status: number): string {
+  if (typeof errorBody?.message === 'string' && errorBody.message.trim()) {
+    if (errorBody.code === 'VALIDATION_ERROR' && errorBody.details?.fieldErrors) {
+      const fieldErrors = Object.values(errorBody.details.fieldErrors)
+        .flat()
+        .filter((value): value is string => typeof value === 'string' && value.trim().length > 0);
+
+      if (fieldErrors.length > 0) {
+        return fieldErrors[0];
+      }
+    }
+
+    return errorBody.message;
+  }
+
+  if (status === 401) {
+    return 'Your session expired. Please sign in again.';
+  }
+
+  return 'Request failed';
+}
+
 export async function apiFetch<T>(path: string, options: RequestInit = {}, token?: string): Promise<T> {
   let response: Response;
 
@@ -43,12 +65,18 @@ export async function apiFetch<T>(path: string, options: RequestInit = {}, token
       }
     });
   } catch (error) {
+    if (error instanceof Error) {
+      throw new Error(
+        `Cannot reach API at ${API_BASE_URL}. If you are using a phone, replace localhost in apps/mobile/.env with your computer's LAN IP.`
+      );
+    }
+
     throw error;
   }
 
   if (!response.ok) {
     const errorBody = await response.json().catch(() => ({ message: 'Unknown error' }));
-    throw new Error(errorBody.message ?? 'Request failed');
+    throw new Error(buildErrorMessage(errorBody, response.status));
   }
 
   return response.json() as Promise<T>;

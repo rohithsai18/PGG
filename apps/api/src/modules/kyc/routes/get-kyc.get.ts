@@ -20,6 +20,8 @@ export function registerGetKycRoute(router: Router): void {
     res.json({
       id: doc.id,
       userId: doc.userId,
+      panNumber: doc.panNumber,
+      aadhaarNumber: doc.aadhaarNumber,
       panNumberMasked: maskSensitive(doc.panNumber),
       aadhaarNumberMasked: maskSensitive(doc.aadhaarNumber),
       panFileUrl: doc.panFileUrl,

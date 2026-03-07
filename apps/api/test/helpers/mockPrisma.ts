@@ -42,6 +42,33 @@ type Booking = {
   updatedAt: Date;
 };
 
+type BookingApplication = {
+  id: string;
+  bookingId: string;
+  isChannelPartnerBooking: boolean;
+  coApplicantCount: number;
+  primaryApplicant: unknown;
+  coApplicants: unknown;
+  professionalDetails: unknown;
+  purchaseDetails: unknown;
+  channelPartnerDetails: unknown;
+  paymentDetails: unknown;
+  unitSnapshot: unknown;
+  declarations: unknown;
+  createdAt: Date;
+  updatedAt: Date;
+};
+
+type KycDocument = {
+  id: string;
+  userId: string;
+  panNumber: string;
+  aadhaarNumber: string;
+  panFileUrl: string | null;
+  aadhaarFileUrl: string | null;
+  updatedAt: Date;
+};
+
 type CostSheet = {
   id: string;
   bookingId: string;
@@ -58,13 +85,47 @@ function now() {
   return new Date();
 }
 
+function matchesUnitWhere(unit: Unit, where?: any) {
+  if (!where) {
+    return true;
+  }
+
+  if (where.status && unit.status !== where.status) {
+    return false;
+  }
+
+  if (where.tower && unit.tower !== where.tower) {
+    return false;
+  }
+
+  if (Array.isArray(where.OR) && where.OR.length > 0) {
+    const matchesOr = where.OR.some((clause: any) => {
+      if (clause.tower?.contains) {
+        return unit.tower.toLowerCase().includes(String(clause.tower.contains).toLowerCase());
+      }
+      if (clause.unitNumber?.contains) {
+        return unit.unitNumber.toLowerCase().includes(String(clause.unitNumber.contains).toLowerCase());
+      }
+      return false;
+    });
+
+    if (!matchesOr) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
 export function createMockPrisma() {
   const users = new Map<string, User>();
   const usersByPhone = new Map<string, string>();
   const otpRequests = new Map<string, OtpRequest>();
   const units = new Map<string, Unit>();
   const bookings = new Map<string, Booking>();
+  const bookingApplications = new Map<string, BookingApplication>();
   const costSheets = new Map<string, CostSheet>();
+  const kycDocuments = new Map<string, KycDocument>();
 
   const seedUnit: Unit = {
     id: randomUUID(),
@@ -86,8 +147,53 @@ export function createMockPrisma() {
     createdAt: now(),
     updatedAt: now()
   };
+  const extraUnits: Unit[] = [
+    {
+      id: randomUUID(),
+      tower: 'T-1',
+      unitNumber: '103',
+      areaSqft: 1040,
+      price: 7200000,
+      status: UnitStatus.AVAILABLE,
+      createdAt: now(),
+      updatedAt: now()
+    },
+    {
+      id: randomUUID(),
+      tower: 'T-2',
+      unitNumber: '201',
+      areaSqft: 1100,
+      price: 8100000,
+      status: UnitStatus.AVAILABLE,
+      createdAt: now(),
+      updatedAt: now()
+    },
+    {
+      id: randomUUID(),
+      tower: 'T-2',
+      unitNumber: '202',
+      areaSqft: 1125,
+      price: 8300000,
+      status: UnitStatus.AVAILABLE,
+      createdAt: now(),
+      updatedAt: now()
+    },
+    {
+      id: randomUUID(),
+      tower: 'T-3',
+      unitNumber: '301',
+      areaSqft: 1180,
+      price: 9100000,
+      status: UnitStatus.BOOKED,
+      createdAt: now(),
+      updatedAt: now()
+    }
+  ];
   units.set(seedUnit.id, seedUnit);
   units.set(seedReservedUnit.id, seedReservedUnit);
+  for (const unit of extraUnits) {
+    units.set(unit.id, unit);
+  }
 
   const prisma = {
     otpRequest: {
@@ -157,17 +263,80 @@ export function createMockPrisma() {
       }
     },
     kycDocument: {
-      findUnique: async () => null,
-      upsert: async ({ where, create, update }: any) => ({ id: randomUUID(), userId: where.userId, ...create, ...update, updatedAt: now() }),
-      update: async ({ where, data }: any) => ({ id: randomUUID(), userId: where.userId, ...data, updatedAt: now() })
+      findUnique: async ({ where }: any) => {
+        return Array.from(kycDocuments.values()).find((doc) => doc.userId === where.userId) ?? null;
+      },
+      upsert: async ({ where, create, update }: any) => {
+        const existing = Array.from(kycDocuments.values()).find((doc) => doc.userId === where.userId);
+        if (existing) {
+          const next: KycDocument = { ...existing, ...update, updatedAt: now() };
+          kycDocuments.set(existing.id, next);
+          return next;
+        }
+
+        const row: KycDocument = {
+          id: randomUUID(),
+          userId: create.userId,
+          panNumber: create.panNumber,
+          aadhaarNumber: create.aadhaarNumber,
+          panFileUrl: create.panFileUrl ?? null,
+          aadhaarFileUrl: create.aadhaarFileUrl ?? null,
+          updatedAt: now()
+        };
+        kycDocuments.set(row.id, row);
+        return row;
+      },
+      update: async ({ where, data }: any) => {
+        const existing = Array.from(kycDocuments.values()).find((doc) => doc.userId === where.userId);
+        if (!existing) {
+          throw new Error('KYC not found');
+        }
+        const next: KycDocument = { ...existing, ...data, updatedAt: now() };
+        kycDocuments.set(existing.id, next);
+        return next;
+      }
     },
     unit: {
-      findMany: async ({ where }: any) => {
-        const list = Array.from(units.values());
-        if (!where?.status) {
-          return list;
+      findMany: async (args: any = {}) => {
+        const { where, orderBy, skip, take, distinct, select } = args;
+        let list = Array.from(units.values()).filter((unit) => matchesUnitWhere(unit, where));
+
+        if (orderBy) {
+          const orderRules = Array.isArray(orderBy) ? orderBy : [orderBy];
+          list.sort((a, b) => {
+            for (const rule of orderRules) {
+              const [field, direction] = Object.entries(rule)[0] as [keyof Unit, 'asc' | 'desc'];
+              const comparison = String(a[field]).localeCompare(String(b[field]), undefined, { numeric: true });
+              if (comparison !== 0) {
+                return direction === 'desc' ? -comparison : comparison;
+              }
+            }
+            return 0;
+          });
         }
-        return list.filter((u) => u.status === where.status);
+
+        if (Array.isArray(distinct) && distinct.length > 0) {
+          const seen = new Set<string>();
+          list = list.filter((unit) => {
+            const key = distinct.map((field) => String((unit as any)[field])).join('|');
+            if (seen.has(key)) {
+              return false;
+            }
+            seen.add(key);
+            return true;
+          });
+        }
+
+        const sliced = list.slice(skip ?? 0, take ? (skip ?? 0) + take : undefined);
+
+        if (select?.tower) {
+          return sliced.map((unit) => ({ tower: unit.tower }));
+        }
+
+        return sliced;
+      },
+      count: async ({ where }: any = {}) => {
+        return Array.from(units.values()).filter((unit) => matchesUnitWhere(unit, where)).length;
       },
       findUnique: async ({ where }: any) => {
         return units.get(where.id) ?? null;
@@ -259,6 +428,31 @@ export function createMockPrisma() {
         }));
       }
     },
+    bookingApplication: {
+      create: async ({ data }: any) => {
+        const row: BookingApplication = {
+          id: randomUUID(),
+          bookingId: data.bookingId,
+          isChannelPartnerBooking: data.isChannelPartnerBooking,
+          coApplicantCount: data.coApplicantCount,
+          primaryApplicant: data.primaryApplicant,
+          coApplicants: data.coApplicants,
+          professionalDetails: data.professionalDetails ?? null,
+          purchaseDetails: data.purchaseDetails ?? null,
+          channelPartnerDetails: data.channelPartnerDetails ?? null,
+          paymentDetails: data.paymentDetails ?? null,
+          unitSnapshot: data.unitSnapshot,
+          declarations: data.declarations,
+          createdAt: now(),
+          updatedAt: now()
+        };
+        bookingApplications.set(row.id, row);
+        return row;
+      },
+      findUnique: async ({ where }: any) => {
+        return Array.from(bookingApplications.values()).find((row) => row.bookingId === where.bookingId) ?? null;
+      }
+    },
     costSheet: {
       create: async ({ data }: any) => {
         const row: CostSheet = {
@@ -284,6 +478,29 @@ export function createMockPrisma() {
         return Promise.all(arg);
       }
       throw new Error('Unsupported transaction usage');
+    },
+    $executeRawUnsafe: async (query: string, ...args: any[]) => {
+      if (query.includes('"BookingApplication"')) {
+        const row: BookingApplication = {
+          id: args[0],
+          bookingId: args[1],
+          isChannelPartnerBooking: args[2],
+          coApplicantCount: args[3],
+          primaryApplicant: JSON.parse(args[4]),
+          coApplicants: JSON.parse(args[5]),
+          professionalDetails: JSON.parse(args[6]),
+          purchaseDetails: JSON.parse(args[7]),
+          channelPartnerDetails: JSON.parse(args[8]),
+          paymentDetails: JSON.parse(args[9]),
+          unitSnapshot: JSON.parse(args[10]),
+          declarations: JSON.parse(args[11]),
+          createdAt: now(),
+          updatedAt: now()
+        };
+        bookingApplications.set(row.id, row);
+        return 1;
+      }
+      return 0;
     }
   };
 

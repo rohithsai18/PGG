@@ -1,6 +1,32 @@
-import type { BookingDTO, CostSheetDTO, UnitDTO, UserDTO } from '@real-estate/shared';
+import type {
+  BookingApplicationDTO,
+  BookingApplicationSummaryDTO,
+  BookingAddressDTO,
+  BookingApplicantDTO,
+  BookingDTO,
+  CostSheetDTO,
+  CreateBookingPayload,
+  KycDTO,
+  ListUnitsQuery,
+  PaginatedUnitsDTO,
+  UnitDTO,
+  UserDTO
+} from '@real-estate/shared';
 
-export type { BookingDTO, CostSheetDTO, UnitDTO, UserDTO };
+export type {
+  BookingApplicationDTO,
+  BookingApplicationSummaryDTO,
+  BookingAddressDTO,
+  BookingApplicantDTO,
+  BookingDTO,
+  CostSheetDTO,
+  CreateBookingPayload,
+  KycDTO,
+  ListUnitsQuery,
+  PaginatedUnitsDTO,
+  UnitDTO,
+  UserDTO
+};
 
 export interface AuthState {
   token: string | null;

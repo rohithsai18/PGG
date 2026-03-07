@@ -71,9 +71,30 @@ model Booking {
   user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
   unit          Unit          @relation(fields: [unitId], references: [id], onDelete: Restrict)
   costSheet     CostSheet?
+  application   BookingApplication?
 
   @@index([userId])
   @@index([unitId])
+}
+
+model BookingApplication {
+  id                      String   @id @default(uuid()) @db.Uuid
+  bookingId               String   @unique @db.Uuid
+  isChannelPartnerBooking Boolean  @default(false)
+  coApplicantCount        Int      @default(0)
+  primaryApplicant        Json
+  coApplicants            Json
+  professionalDetails     Json?
+  purchaseDetails         Json?
+  channelPartnerDetails   Json?
+  paymentDetails          Json?
+  unitSnapshot            Json
+  declarations            Json
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+  booking                 Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+
+  @@index([isChannelPartnerBooking])
 }
 
 model CostSheet {

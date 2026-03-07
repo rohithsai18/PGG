@@ -2,6 +2,7 @@ import { Stack } from 'expo-router';
 import { ActivityIndicator, View } from 'react-native';
 import { AuthProvider, useAuth } from '../src/contexts/AuthContext';
 import AppHeader from '../src/components/AppHeader';
+import { ToastViewport } from '../src/lib/toast';
 
 function RootNavigator() {
   const { loading } = useAuth();
@@ -34,7 +35,10 @@ function RootNavigator() {
 export default function Layout() {
   return (
     <AuthProvider>
-      <RootNavigator />
+      <View style={{ flex: 1 }}>
+        <RootNavigator />
+        <ToastViewport />
+      </View>
     </AuthProvider>
   );
 }

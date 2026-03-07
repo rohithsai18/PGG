@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { z } from 'zod';
 import { env } from '../../../config/env';
+import { AppError } from '../../../lib/errors';
 import { getAuthUserId } from '../../../lib/get-auth-user-id';
 import { validate } from '../../../middleware/validate';
 import { documentsCloudinary, shortId } from '../cloudinary-client';
@@ -13,6 +14,21 @@ const uploadUrlSchema = z.object({
 
 export function registerUploadUrlRoute(router: Router): void {
   router.post('/upload-url', validate({ body: uploadUrlSchema }), async (req, res) => {
+    if (
+      env.CLOUDINARY_CLOUD_NAME === 'demo' ||
+      env.CLOUDINARY_CLOUD_NAME === 'demo-cloud' ||
+      env.CLOUDINARY_API_KEY === 'key' ||
+      env.CLOUDINARY_API_KEY === 'demo-key' ||
+      env.CLOUDINARY_API_SECRET === 'secret' ||
+      env.CLOUDINARY_API_SECRET === 'demo-secret'
+    ) {
+      throw new AppError(
+        503,
+        'CLOUDINARY_NOT_CONFIGURED',
+        'Document upload is not configured. Update apps/api/.env with real Cloudinary credentials.'
+      );
+    }
+
     const userId = getAuthUserId(req);
     const { type, mimeType } = req.body;
     const now = Math.floor(Date.now() / 1000);
@@ -34,6 +50,7 @@ export function registerUploadUrlRoute(router: Router): void {
       signature,
       apiKey: env.CLOUDINARY_API_KEY,
       timestamp: now,
+      folder: env.CLOUDINARY_FOLDER,
       mimeType
     });
   });

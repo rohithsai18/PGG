@@ -4,6 +4,7 @@ import { AppError } from '../../../lib/errors';
 import { getAuthUserId } from '../../../lib/get-auth-user-id';
 import { prisma } from '../../../lib/prisma';
 import { validate } from '../../../middleware/validate';
+import { buildReceiptPdf } from '../receipt-pdf';
 
 const bookingIdSchema = z.object({ bookingId: z.string().uuid() });
 
@@ -25,16 +26,20 @@ export function registerGetReceiptRoute(router: Router): void {
       throw new AppError(404, 'BOOKING_NOT_FOUND', 'Booking not found');
     }
 
-    res.json({
+    const pdf = buildReceiptPdf({
       bookingId: booking.id,
       customerName: booking.user.name,
       customerPhone: booking.user.phone,
-      unit: booking.unit,
+      unitLabel: `${booking.unit.tower} - ${booking.unit.unitNumber}`,
       bookingAmount: booking.bookingAmount,
       bookingStatus: booking.bookingStatus,
       paymentRef: booking.paymentRef,
-      costSheet: booking.costSheet,
+      costSheetTotal: booking.costSheet?.total,
       generatedAt: new Date().toISOString()
     });
+
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `attachment; filename="receipt-${booking.id}.pdf"`);
+    res.send(pdf);
   });
 }

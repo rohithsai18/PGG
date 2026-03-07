@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Alert, FlatList, Pressable, RefreshControl, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Linking, Platform, Pressable, RefreshControl, StyleSheet, Text, View } from 'react-native';
+import * as FileSystem from 'expo-file-system';
 import { useAuth } from '../../src/contexts/AuthContext';
-import { getReceipt, listMyBookings } from '../../src/services/bookingService';
+import { downloadReceiptPdf, listMyBookings } from '../../src/services/bookingService';
 import { BookingDTO } from '../../src/types';
 import { showToast } from '../../src/lib/toast';
 
@@ -44,10 +45,14 @@ export default function MyPropertiesTab() {
     }
 
     try {
-      const receipt = await getReceipt(token, bookingId);
-      Alert.alert('Receipt JSON', JSON.stringify(receipt, null, 2).slice(0, 600));
+      const fileUri = await downloadReceiptPdf(token, bookingId);
+      const openUri = Platform.OS === 'android'
+        ? await FileSystem.getContentUriAsync(fileUri)
+        : fileUri;
+
+      await Linking.openURL(openUri);
     } catch (error) {
-      showToast((error as Error).message);
+      showToast((error as Error).message || 'Could not download the receipt PDF.');
     }
   };
 
@@ -78,7 +83,7 @@ export default function MyPropertiesTab() {
             <Text style={styles.muted}>Status: {item.bookingStatus}</Text>
             <Text style={styles.muted}>Amount: {item.bookingAmount}</Text>
             <Pressable style={styles.button} onPress={() => onGetReceipt(item.id)}>
-              <Text style={styles.buttonText}>View Receipt JSON</Text>
+              <Text style={styles.buttonText}>Download Receipt PDF</Text>
             </Pressable>
           </View>
         )}
